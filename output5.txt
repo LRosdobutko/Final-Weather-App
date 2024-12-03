@@ -1,0 +1,73 @@
+Data: 
+    
+Data: 
+
+Data: DAY 
+Data: 
+
+Data: Max Temp
+Data:  Definition
+Data: °C
+Data:  
+Data: 
+
+Data: Min Temp
+Data:  Definition
+Data: °C
+Data:  
+Data: 
+
+Data: Mean Temp
+Data:  Definition
+Data: °C
+Data:  
+Data: 
+
+Data: Heat Deg Days
+Data:  Definition
+Data:  
+Data: 
+
+Data: Cool Deg Days
+Data:  Definition
+Data:  
+Data: 
+
+Data: Total Rain
+Data:  Definition
+Data: mm
+Data:  
+Data: 
+
+Data: Total Snow
+Data:  Definition
+Data: cm
+Data:  
+Data: 
+
+Data: Total Precip
+Data:  Definition
+Data: mm
+Data:  
+Data: 
+
+Data: Snow on Grnd
+Data:  Definition
+Data: cm
+Data:  
+Data: 
+
+Data: Dir of Max Gust
+Data:  Definition
+Data: 10's deg
+Data:  
+Data: 
+
+Data: Spd of Max Gust
+Data:  Definition
+Data: km/h
+Data:  
+Data: 
+    
+Data: 
+  

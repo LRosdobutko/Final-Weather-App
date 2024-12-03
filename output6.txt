@@ -1,0 +1,21 @@
+Data: DAY
+Data: Max Temp
+Data: °C
+Data: Min Temp
+Data: °C
+Data: Mean Temp
+Data: °C
+Data: Heat Deg Days
+Data: Cool Deg Days
+Data: Total Rain
+Data: mm
+Data: Total Snow
+Data: cm
+Data: Total Precip
+Data: mm
+Data: Snow on Grnd
+Data: cm
+Data: Dir of Max Gust
+Data: 10's deg
+Data: Spd of Max Gust
+Data: km/h

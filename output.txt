@@ -1,0 +1,1356 @@
+Data: Daily Data Report for May 2018
+Start tag: <th>
+Data: DAY 
+End tag: </th>
+Start tag: <th>
+Data: Max Temp
+Data:  Definition
+Data: °C
+End tag: </th>
+Start tag: <th>
+Data: Min Temp
+Data:  Definition
+Data: °C
+End tag: </th>
+Start tag: <th>
+Data: Mean Temp
+Data:  Definition
+Data: °C
+End tag: </th>
+Start tag: <th>
+Data: Heat Deg Days
+Data:  Definition
+End tag: </th>
+Start tag: <th>
+Data: Cool Deg Days
+Data:  Definition
+End tag: </th>
+Start tag: <th>
+Data: Total Rain
+Data:  Definition
+Data: mm
+End tag: </th>
+Start tag: <th>
+Data: Total Snow
+Data:  Definition
+Data: cm
+End tag: </th>
+Start tag: <th>
+Data: Total Precip
+Data:  Definition
+Data: mm
+End tag: </th>
+Start tag: <th>
+Data: Snow on Grnd
+Data:  Definition
+Data: cm
+End tag: </th>
+Start tag: <th>
+Data: Dir of Max Gust
+Data:  Definition
+Data: 10's deg
+End tag: </th>
+Start tag: <th>
+Data: Spd of Max Gust
+Data:  Definition
+Data: km/h
+End tag: </th>
+Start tag: <th>
+Data: 01
+End tag: </th>
+Start tag: <td>
+Data: 5.7
+End tag: </td>
+Start tag: <td>
+Data: 1.4
+End tag: </td>
+Start tag: <td>
+Data: 3.6
+End tag: </td>
+Start tag: <td>
+Data: 14.4
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 34 
+End tag: </td>
+Start tag: <td>
+Data: 39 
+End tag: </td>
+Start tag: <th>
+Data: 02
+End tag: </th>
+Start tag: <td>
+Data: 19.8
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 9.9
+End tag: </td>
+Start tag: <td>
+Data: 8.1
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 22 
+End tag: </td>
+Start tag: <td>
+Data: 35 
+End tag: </td>
+Start tag: <th>
+Data: 03
+End tag: </th>
+Start tag: <td>
+Data: 21.6
+End tag: </td>
+Start tag: <td>
+Data: -1.5
+End tag: </td>
+Start tag: <td>
+Data: 10.1
+End tag: </td>
+Start tag: <td>
+Data: 7.9
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 27 
+End tag: </td>
+Start tag: <td>
+Data: 54 
+End tag: </td>
+Start tag: <th>
+Data: 04
+End tag: </th>
+Start tag: <td>
+Data: 20.7
+End tag: </td>
+Start tag: <td>
+Data: 1.3
+End tag: </td>
+Start tag: <td>
+Data: 11.0
+End tag: </td>
+Start tag: <td>
+Data: 7.0
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 34 
+End tag: </td>
+Start tag: <td>
+Data: 56 
+End tag: </td>
+Start tag: <th>
+Data: 05
+End tag: </th>
+Start tag: <td>
+Data: 18.8
+End tag: </td>
+Start tag: <td>
+Data: 6.7
+End tag: </td>
+Start tag: <td>
+Data: 12.8
+End tag: </td>
+Start tag: <td>
+Data: 5.2
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 36 
+End tag: </td>
+Start tag: <td>
+Data: 41 
+End tag: </td>
+Start tag: <th>
+Data: 06
+End tag: </th>
+Start tag: <td>
+Data: 23.6
+End tag: </td>
+Start tag: <td>
+Data: 7.1
+End tag: </td>
+Start tag: <td>
+Data: 15.4
+End tag: </td>
+Start tag: <td>
+Data: 2.6
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: <31 
+End tag: </td>
+Start tag: <th>
+Data: 07
+End tag: </th>
+Start tag: <td>
+Data: 31.6
+End tag: </td>
+Start tag: <td>
+Data: 9.4
+End tag: </td>
+Start tag: <td>
+Data: 20.5
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 2.5
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 2 
+End tag: </td>
+Start tag: <td>
+Data: 61 
+End tag: </td>
+Start tag: <th>
+Data: 08
+End tag: </th>
+Start tag: <td>
+Data: 20.7
+End tag: </td>
+Start tag: <td>
+Data: 7.6
+End tag: </td>
+Start tag: <td>
+Data: 14.2
+End tag: </td>
+Start tag: <td>
+Data: 3.8
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 6 
+End tag: </td>
+Start tag: <td>
+Data: 37 
+End tag: </td>
+Start tag: <th>
+Data: 09
+End tag: </th>
+Start tag: <td>
+Data: 17.7
+End tag: </td>
+Start tag: <td>
+Data: -2.1
+End tag: </td>
+Start tag: <td>
+Data: 7.8
+End tag: </td>
+Start tag: <td>
+Data: 10.2
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 35 
+End tag: </td>
+Start tag: <td>
+Data: 59 
+End tag: </td>
+Start tag: <th>
+Data: 10
+End tag: </th>
+Start tag: <td>
+Data: 11.2
+End tag: </td>
+Start tag: <td>
+Data: -8.5
+End tag: </td>
+Start tag: <td>
+Data: 1.4
+End tag: </td>
+Start tag: <td>
+Data: 16.6
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 1 
+End tag: </td>
+Start tag: <td>
+Data: 41 
+End tag: </td>
+Start tag: <th>
+Data: 11
+End tag: </th>
+Start tag: <td>
+Data: 15.2
+End tag: </td>
+Start tag: <td>
+Data: -4.0
+End tag: </td>
+Start tag: <td>
+Data: 5.6
+End tag: </td>
+Start tag: <td>
+Data: 12.4
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: <31 
+End tag: </td>
+Start tag: <th>
+Data: 12
+End tag: </th>
+Start tag: <td>
+Data: 23.0
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 11.5
+End tag: </td>
+Start tag: <td>
+Data: 6.5
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 22 
+End tag: </td>
+Start tag: <td>
+Data: 43 
+End tag: </td>
+Start tag: <th>
+Data: 13
+End tag: </th>
+Start tag: <td>
+Data: 28.1
+End tag: </td>
+Start tag: <td>
+Data: 10.7
+End tag: </td>
+Start tag: <td>
+Data: 19.4
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 1.4
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 27 
+End tag: </td>
+Start tag: <td>
+Data: 52 
+End tag: </td>
+Start tag: <th>
+Data: 14
+End tag: </th>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 1.8
+Data: LegendE
+Data: E
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <th>
+Data: 15
+End tag: </th>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <th>
+Data: 16
+End tag: </th>
+Start tag: <td>
+Data: 18.8
+End tag: </td>
+Start tag: <td>
+Data: 6.7
+End tag: </td>
+Start tag: <td>
+Data: 12.8
+End tag: </td>
+Start tag: <td>
+Data: 5.2
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 2 
+End tag: </td>
+Start tag: <td>
+Data: 42 
+End tag: </td>
+Start tag: <th>
+Data: 17
+End tag: </th>
+Start tag: <td>
+Data: 15.4
+End tag: </td>
+Start tag: <td>
+Data: 7.6
+End tag: </td>
+Start tag: <td>
+Data: 11.5
+End tag: </td>
+Start tag: <td>
+Data: 6.5
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.8
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 7 
+End tag: </td>
+Start tag: <td>
+Data: 43 
+End tag: </td>
+Start tag: <th>
+Data: 18
+End tag: </th>
+Start tag: <td>
+Data: 9.4
+End tag: </td>
+Start tag: <td>
+Data: 2.0
+End tag: </td>
+Start tag: <td>
+Data: 5.7
+End tag: </td>
+Start tag: <td>
+Data: 12.3
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 6.8
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 4 
+End tag: </td>
+Start tag: <td>
+Data: 49 
+End tag: </td>
+Start tag: <th>
+Data: 19
+End tag: </th>
+Start tag: <td>
+Data: 20.7
+End tag: </td>
+Start tag: <td>
+Data: -1.0
+End tag: </td>
+Start tag: <td>
+Data: 9.8
+End tag: </td>
+Start tag: <td>
+Data: 8.2
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 33 
+End tag: </td>
+Start tag: <td>
+Data: 43 
+End tag: </td>
+Start tag: <th>
+Data: 20
+End tag: </th>
+Start tag: <td>
+Data: 26.8
+End tag: </td>
+Start tag: <td>
+Data: 1.4
+End tag: </td>
+Start tag: <td>
+Data: 14.1
+End tag: </td>
+Start tag: <td>
+Data: 3.9
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 20 
+End tag: </td>
+Start tag: <td>
+Data: 34 
+End tag: </td>
+Start tag: <th>
+Data: 21
+End tag: </th>
+Start tag: <td>
+Data: 27.3
+End tag: </td>
+Start tag: <td>
+Data: 6.6
+End tag: </td>
+Start tag: <td>
+Data: 17.0
+End tag: </td>
+Start tag: <td>
+Data: 1.0
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 16 
+End tag: </td>
+Start tag: <td>
+Data: 34 
+End tag: </td>
+Start tag: <th>
+Data: 22
+End tag: </th>
+Start tag: <td>
+Data: 29.3
+End tag: </td>
+Start tag: <td>
+Data: 11.4
+End tag: </td>
+Start tag: <td>
+Data: 20.3
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 2.3
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 18 
+End tag: </td>
+Start tag: <td>
+Data: 38 
+End tag: </td>
+Start tag: <th>
+Data: 23
+End tag: </th>
+Start tag: <td>
+Data: 31.5
+End tag: </td>
+Start tag: <td>
+Data: 14.3
+End tag: </td>
+Start tag: <td>
+Data: 22.9
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 4.9
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 17 
+End tag: </td>
+Start tag: <td>
+Data: 33 
+End tag: </td>
+Start tag: <th>
+Data: 24
+End tag: </th>
+Start tag: <td>
+Data: 32.6
+End tag: </td>
+Start tag: <td>
+Data: 15.3
+End tag: </td>
+Start tag: <td>
+Data: 24.0
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 6.0
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 3.5
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 25 
+End tag: </td>
+Start tag: <td>
+Data: 76 
+End tag: </td>
+Start tag: <th>
+Data: 25
+End tag: </th>
+Start tag: <td>
+Data: 31.7
+End tag: </td>
+Start tag: <td>
+Data: 13.5
+End tag: </td>
+Start tag: <td>
+Data: 22.6
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 4.6
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 1.2
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 31 
+End tag: </td>
+Start tag: <td>
+Data: 61 
+End tag: </td>
+Start tag: <th>
+Data: 26
+End tag: </th>
+Start tag: <td>
+Data: 26.0
+End tag: </td>
+Start tag: <td>
+Data: 11.8
+End tag: </td>
+Start tag: <td>
+Data: 18.9
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 0.9
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.4
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: <31 
+End tag: </td>
+Start tag: <th>
+Data: 27
+End tag: </th>
+Start tag: <td>
+Data: 29.2
+End tag: </td>
+Start tag: <td>
+Data: 13.5
+End tag: </td>
+Start tag: <td>
+Data: 21.4
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 3.4
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.7
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: <31 
+End tag: </td>
+Start tag: <th>
+Data: 28
+End tag: </th>
+Start tag: <td>
+Data: 27.7
+End tag: </td>
+Start tag: <td>
+Data: 10.6
+End tag: </td>
+Start tag: <td>
+Data: 19.1
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+Data: 1.1
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 0.0
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 4 
+End tag: </td>
+Start tag: <td>
+Data: 41 
+End tag: </td>
+Start tag: <th>
+Data: 29
+End tag: </th>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <th>
+Data: 30
+End tag: </th>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <th>
+Data: 31
+End tag: </th>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <th>
+Data: Sum
+End tag: </th>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 131.8
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+Data: 27.1
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 13.4
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <th>
+Data: Avg
+End tag: </th>
+Start tag: <td>
+Data: 22.5
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+Data: 5.3
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+Data: 14.0
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <th>
+Data: Xtrm
+End tag: </th>
+Start tag: <td>
+Data: 32.6
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+Data: -8.5
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: LegendM
+Data: M
+End tag: </td>
+Start tag: <td>
+Data: 6.8
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+End tag: </td>
+Start tag: <td>
+Data: 25
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+Data: 76
+Data: LegendCarer
+Data: ^
+End tag: </td>
+Start tag: <td>
+Data: Summary, average and extreme values are based on the data above.
+End tag: </td>
