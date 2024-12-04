@@ -1,4 +1,0 @@
-DAY
-Max Temp
-Min Temp
-Mean Temp

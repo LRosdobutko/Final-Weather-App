@@ -1,4 +1,0 @@
-DAY
-Max Temp °C
-Min Temp °C
-Mean Temp °C
