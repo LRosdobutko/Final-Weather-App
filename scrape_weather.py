@@ -1,71 +1,133 @@
 import requests
-from html.parser import HTMLParser
+from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
 
-class ScrapeWeather(HTMLParser):
-    def __init__(self, output_file):
-        super().__init__()
-        self.inside_table = False  # Track if inside a <table> tag
-        self.inside_thead = False
-        self.inside_th = False
-        self.inside_tbody = False
-        self.current_header = None  # Store the current header
-        self.output_file = output_file  # File to write the output
+class WeatherScraper:
+    def __init__(self, start_year, start_month, months_to_scrape=1):
+        """
+        Initialize the WeatherScraper with the start year, start month, and the number of months to scrape.
 
-    def handle_starttag(self, tag, attrs):
-        if tag == "table":
-            self.inside_table = True  # Inside a <table>
-        if tag == "thead":
-            self.inside_thead = True
-        if tag == "th":
-            self.inside_th = True
-        if tag == "tbody":
-            self.inside_tbody = True
+        :param start_year: The year to start scraping from.
+        :param start_month: The month to start scraping from (1-12).
+        :param months_to_scrape: Number of months of weather data to scrape. Default is 1 month.
+        """
+        self.start_year = start_year
+        self.start_month = start_month
+        self.months_to_scrape = months_to_scrape
+        self.weather_data = {}
 
-    def handle_endtag(self, tag):
-        if tag == "table":
-            self.inside_table = False  # Leaving a <table>
-        if tag == "thead":
-            self.inside_thead = False
-        if tag == "th":
-            self.inside_th = False
-        if tag == "tbody":
-            self.inside_tbody = True
+    def _get_html(self, url):
+        """
+        Fetch HTML content from the provided URL.
 
-    def handle_data(self, header):
-        if self.inside_thead and self.inside_th and header.strip():  # Ensure data is inside <thead> and not empty
-            header = header.strip()
-            # Exclude unnecessary content like definitions
-            if "Definition" not in header:
-                # Check if the header contains "day" or "temp" (case insensitive)
-                if "day" in header.lower() or "temp" in header.lower():
-                    # If we already have a current header and the data is not a unit, print it
-                    if self.current_header:
-                        # If it's a unit, print it after the header
-                        if header in ["°C", "mm", "cm", "km/h", "10's deg"]:
-                            self.output_file.write(f"{self.current_header} {header}\n")
-                            self.current_header = None  # Reset header after printing with unit
-                        else:
-                            # If it's another label, update the current header
-                            self.output_file.write(f"{self.current_header}\n")
-                            self.current_header = header
-                    else:
-                        # For the first header, set it
-                        self.current_header = header
+        :param url: The URL to fetch the content from.
+        :return: HTML content of the page as a string.
+        """
+        response = requests.get(url)
+        if response.status_code == 200:
+            return response.text
+        else:
+            raise Exception(f"Failed to fetch page. Status code: {response.status_code}")
 
-# Fetch HTML from a URL
-url = "https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1&Year=2018&Month=5#"
+    def _parse_date(self, date_str):
+        """
+        Parse the date from the HTML table and convert it into YYYY-MM-DD format.
 
-try:
-    response = requests.get(url)
-    response.raise_for_status()  # Check for HTTP request errors
-    response.encoding = 'utf-8'  # Explicitly set the encoding to UTF-8
-    html_content = response.text
+        :param date_str: Date in the format "MM-DD-YYYY" or similar.
+        :return: Date in YYYY-MM-DD format.
+        """
+        try:
+            date = datetime.strptime(date_str, '%B %d, %Y')
+            return date.strftime('%Y-%m-%d')
+        except ValueError:
+            return None
 
-    # Open a text file to write the output
-    with open("output99.txt", "w", encoding="utf-8") as output_file:
-        # Parse the fetched HTML and write to the file
-        scraper = ScrapeWeather(output_file)
-        scraper.feed(html_content)
+    def _parse_weather_data(self, row):
+        """
+        Extract temperature data (Max, Min, Mean) from an HTML row.
 
-except requests.exceptions.RequestException as e:
-    print(f"An error occurred while fetching the URL: {e}")
+        :param row: The HTML row containing weather data.
+        :return: A dictionary of temperature data (Max, Min, Mean), or None if data is invalid.
+        """
+        cells = row.find_all('td')
+        if len(cells) < 3:
+            return None
+
+        try:
+            max_temp = float(cells[1].text.strip())
+            min_temp = float(cells[2].text.strip())
+            mean_temp = float(cells[3].text.strip())
+            return {'Max': max_temp, 'Min': min_temp, 'Mean': mean_temp}
+        except ValueError:
+            return None
+
+    def scrape(self):
+        """
+        Scrape the weather data starting from the specified year and month, and go backwards in time.
+        Stops after scraping the specified number of months.
+        """
+        current_date = datetime(self.start_year, self.start_month, 1)
+        url = self._generate_url_for_month(current_date)
+        months_scraped = 0
+
+        # Start scraping and go backwards, but stop after scraping the specified number of months
+        while months_scraped < self.months_to_scrape:
+            print(f"Scraping: {url}")
+
+            # Fetch the page HTML
+            html = self._get_html(url)
+
+            # Parse the HTML content
+            soup = BeautifulSoup(html, 'html.parser')
+            rows = soup.find_all('tr')
+
+            # If no weather data is found, stop scraping
+            if not rows:
+                print("No more data found. Stopping scrape.")
+                break
+
+            # Process each row for weather data
+            for row in rows:
+                date_link = row.find('abbr')
+                if date_link:
+                    date_str = date_link['title']
+                    date = self._parse_date(date_str)
+
+                    if date:
+                        weather = self._parse_weather_data(row)
+                        if weather:
+                            self.weather_data[date] = weather
+
+            # Update the URL to scrape the previous month
+            current_date -= timedelta(days=30)  # Go back one month
+            url = self._generate_url_for_month(current_date)
+
+            months_scraped += 1
+
+        return self.weather_data
+
+    def _generate_url_for_month(self, date):
+        """
+        Generate the URL for the specified month and year.
+
+        :param date: The date to base the URL on.
+        :return: The URL for the month’s data.
+        """
+        year = date.year
+        month = date.month
+        day = 1
+        url = f"http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day={day}&Year={year}&Month={month}"
+        return url
+
+    def save_to_file(self, file_name="weather_data.txt"):
+        """
+        Save the scraped weather data to a text file.
+
+        :param file_name: Name of the file to save the data.
+        """
+        with open(file_name, 'w') as f:
+            for date, data in self.weather_data.items():
+                f.write(f"{date}: {data}\n")
+            print(f"Weather data saved to {file_name}")
+
+
