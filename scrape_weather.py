@@ -3,17 +3,15 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
 class WeatherScraper:
-    def __init__(self, start_year, start_month, months_to_scrape=1):
+    def __init__(self, start_year, start_month):
         """
-        Initialize the WeatherScraper with the start year, start month, and the number of months to scrape.
+        Initialize the WeatherScraper with the start year and start month.
 
         :param start_year: The year to start scraping from.
         :param start_month: The month to start scraping from (1-12).
-        :param months_to_scrape: Number of months of weather data to scrape. Default is 1 month.
         """
         self.start_year = start_year
         self.start_month = start_month
-        self.months_to_scrape = months_to_scrape
         self.weather_data = {}
 
     def _get_html(self, url):
@@ -63,15 +61,12 @@ class WeatherScraper:
 
     def scrape(self):
         """
-        Scrape the weather data starting from the specified year and month, and go backwards in time.
-        Stops after scraping the specified number of months.
+        Scrape the weather data starting from the specified year and month, and continue scraping until no more data is found.
         """
         current_date = datetime(self.start_year, self.start_month, 1)
         url = self._generate_url_for_month(current_date)
-        months_scraped = 0
 
-        # Start scraping and go backwards, but stop after scraping the specified number of months
-        while months_scraped < self.months_to_scrape:
+        while True:
             print(f"Scraping: {url}")
 
             # Fetch the page HTML
@@ -102,8 +97,6 @@ class WeatherScraper:
             current_date -= timedelta(days=30)  # Go back one month
             url = self._generate_url_for_month(current_date)
 
-            months_scraped += 1
-
         return self.weather_data
 
     def _generate_url_for_month(self, date):
@@ -129,5 +122,3 @@ class WeatherScraper:
             for date, data in self.weather_data.items():
                 f.write(f"{date}: {data}\n")
             print(f"Weather data saved to {file_name}")
-
-

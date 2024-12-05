@@ -11,7 +11,7 @@ if __name__ == "__main__":
     start_month = current_date.month
 
     # Initialize the WeatherScraper
-    scraper = WeatherScraper(start_year, start_month, months_to_scrape=2)
+    scraper = WeatherScraper(start_year, start_month)
 
     # Scrape the weather data
     weather_data = scraper.scrape()
