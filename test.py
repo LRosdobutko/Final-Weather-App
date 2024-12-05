@@ -2,16 +2,15 @@ from scrape_weather import WeatherScraper  # Import the WeatherScraper class
 from db_operations import DBOperations  # Import the DBOperations class
 from datetime import datetime, timedelta
 
-# Example usage:
 current_date = datetime.now()
 
 if __name__ == "__main__":
     # Set the start year and month based on current date
-    start_year = current_date.year
-    start_month = current_date.month
+    start_year = 1997
+    start_month = 2
 
     # Initialize the WeatherScraper
-    scraper = WeatherScraper(start_year, start_month)
+    scraper = WeatherScraper()
 
     # Scrape the weather data
     weather_data = scraper.scrape()
@@ -33,3 +32,4 @@ if __name__ == "__main__":
 
     # Save the weather data to a file as well (if desired)
     scraper.save_to_file("weather_data.txt")
+
