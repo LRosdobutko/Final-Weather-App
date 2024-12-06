@@ -1,35 +1,41 @@
-from scrape_weather import WeatherScraper  # Import the WeatherScraper class
-from db_operations import DBOperations  # Import the DBOperations class
-from datetime import datetime, timedelta
+from plot_operations import PlotOperations
 
-current_date = datetime.now()
+def main():
+    """
+    Main method to test the functionality of PlotOperations with user input.
+    """
+    print("Welcome to Weather Data Visualization!")
+    plotter = PlotOperations()
+
+    while True:
+        print("\nSelect an option:")
+        print("1. Generate a boxplot for a range of years")
+        print("2. Generate a line plot for a specific year and month")
+        print("3. Exit")
+        choice = input("Enter your choice (1/2/3): ")
+
+        if choice == "1":
+            try:
+                start_year = int(input("Enter the start year (e.g., 2020): "))
+                end_year = int(input("Enter the end year (e.g., 2023): "))
+                plotter.plot_boxplot(start_year, end_year)
+            except ValueError:
+                print("Invalid input. Please enter valid years.")
+        elif choice == "2":
+            try:
+                year = int(input("Enter the year (e.g., 2023): "))
+                month = int(input("Enter the month (1-12): "))
+                if 1 <= month <= 12:
+                    plotter.plot_lineplot(year, month)
+                else:
+                    print("Invalid month. Please enter a value between 1 and 12.")
+            except ValueError:
+                print("Invalid input. Please enter a valid year and month.")
+        elif choice == "3":
+            print("Exiting the program. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please select a valid option.")
 
 if __name__ == "__main__":
-    # Set the start year and month based on current date
-    start_year = 1997
-    start_month = 2
-
-    # Initialize the WeatherScraper
-    scraper = WeatherScraper()
-
-    # Scrape the weather data
-    weather_data = scraper.scrape()
-
-    # Initialize the database operations class
-    db_operations = DBOperations()
-
-    # Initialize the database (create table if it doesn't exist)
-    db_operations.initialize_db()
-
-    # Save the scraped weather data to the database
-    db_operations.save_data(weather_data)
-
-    # Optionally, fetch and print data from the database to verify it was saved correctly
-    print("Data fetched from the database:")
-    rows = db_operations.fetch_data("2024-01-01", "2024-01-31")  # Example date range
-    for row in rows:
-        print(row)
-
-    # Save the weather data to a file as well (if desired)
-    scraper.save_to_file("weather_data.txt")
-
+    main()
