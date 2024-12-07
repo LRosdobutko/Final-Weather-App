@@ -1,6 +1,31 @@
+"""
+This module provides a context manager class for managing SQLite database connections.
+
+The `DBCM` (Database Context Manager) class simplifies database operations by
+automatically handling connection setup, cursor creation, and cleanup upon
+completion of a database transaction or operation.
+"""
+
 import sqlite3
 
 class DBCM:
+    """
+    A context manager class for managing SQLite database connections.
+
+    The `DBCM` class automates the management of SQLite database connections,
+    including opening a connection, creating a cursor for executing queries,
+    committing changes, and closing the connection.
+
+    Attributes:
+        db_name (str): The name of the SQLite database file.
+
+    Methods:
+        __enter__():
+            Establishes the database connection and returns a cursor for executing queries.
+
+        __exit__(exc_type, exc_value, traceback):
+            Commits any changes if no exceptions occurred and closes the database connection.
+    """
     def __init__(self, db_name):
         """
         Initialize the context manager with the database name.
@@ -23,4 +48,3 @@ class DBCM:
         if exc_type is None:
             self.connection.commit()  # Commit if no exceptions
         self.connection.close()
-

@@ -1,9 +1,35 @@
-import matplotlib.pyplot as plt
+"""
+This module provides tools for visualizing weather data stored in an SQLite database.
+
+The `PlotOperations` class includes methods to:
+- Generate box plots that show the distribution of monthly mean temperatures over a range of years.
+- Generate line plots that illustrate daily mean temperatures for a specific month and year.
+
+These visualizations aid in the analysis and interpretation of historical weather data.
+"""
+
 import sqlite3
 from datetime import datetime
-
+import matplotlib.pyplot as plt
 
 class PlotOperations:
+    """
+        A class to create weather data visualizations from an SQLite database.
+
+        The `PlotOperations` class enables users to generate:
+        - Box plots for visualizing monthly mean temperature distributions over a range of years.
+        - Line plots for visualizing daily mean temperature trends within a specific month and year.
+
+        Attributes:
+            db_name (str): The name of the SQLite database file that stores weather data.
+
+        Methods:
+            plot_boxplot(start_year, end_year):
+                Generates a box plot for monthly mean temperatures between the specified years.
+
+            plot_lineplot(year, month):
+                Generates a line plot for daily mean temperatures for a specific month and year.
+    """
     def __init__(self, db_name="weather_data.db"):
         """
         Initialize the PlotOperations with the database name.
@@ -45,7 +71,9 @@ class PlotOperations:
 
         # Create the boxplot
         plt.figure(figsize=(10, 6))
-        plt.boxplot([monthly_data[month] for month in range(1, 13)], labels=["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])
+        plt.boxplot([monthly_data[month] for month in range(1, 13)],
+                    labels=["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])
         plt.title("Monthly Mean Temperature Distribution")
         plt.xlabel("Month")
         plt.ylabel("Mean Temperature (\u00b0C)")

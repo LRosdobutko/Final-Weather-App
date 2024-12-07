@@ -1,7 +1,45 @@
-import sqlite3
+"""
+This module provides database operations for managing weather data in an SQLite database.
+
+The `DBOperations` class offers methods to:
+- Initialize the database schema.
+- Insert weather data into the database while avoiding duplicates.
+- Fetch weather data for a specified date range.
+- Purge all data from the database while retaining its structure.
+
+It is designed to work with an SQLite database and employs
+a context manager for database connections.
+"""
+
 from dbcm import DBCM
 
 class DBOperations:
+    """
+    A class to manage database operations for weather data in an SQLite database.
+
+    The `DBOperations` class provides functionality to:
+    - Set up the database schema for weather data storage.
+    - Insert and save weather data into the database with duplicate-checking mechanisms.
+    - Retrieve weather data records for a specified date range.
+    - Clear all data from the database while preserving the schema.
+
+    Attributes:
+        db_name (str): The name of the SQLite database file.
+
+    Methods:
+        initialize_db():
+            Initializes the database schema by creating the required table
+              if it doesn't already exist.
+
+        save_data(weather_data):
+            Saves weather data to the database, ensuring no duplicate entries.
+
+        fetch_data(start_date, end_date):
+            Retrieves weather data from the database within a specified date range.
+
+        purge_data():
+            Deletes all records from the database while keeping the schema intact.
+    """
     def __init__(self, db_name="weather_data.db"):
         """
         Initialize the DBOperations with the database name.
@@ -64,4 +102,3 @@ class DBOperations:
         delete_sql = "DELETE FROM weather;"
         with DBCM(self.db_name) as cursor:
             cursor.execute(delete_sql)
-
