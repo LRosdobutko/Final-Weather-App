@@ -73,29 +73,6 @@ class WeatherApp:
         db_button = ttk.Button(db_frame, text="Purge Database", command=self.purge_database)
         db_button.pack(pady=10)
 
-        # Frame for database management
-        db_frame = ttk.LabelFrame(self.root, text="Database")
-        db_frame.pack(fill="x", padx=10, pady=5)
-
-        # Fetch the data from the database
-        data = self.db_operations.fetch_data("2000-01-01", str(datetime.today().date()))  # Example date range
-
-        # Create a frame to hold the data
-        table_frame = tk.Frame(db_frame)
-        table_frame.pack(fill="both", expand=True)
-
-        # Column headers
-        headers = ["Date", "Min Temp", "Max Temp", "Avg Temp"]
-        for col_num, header in enumerate(headers):
-            header_label = tk.Label(table_frame, text=header, font=("Arial", 10, "bold"))
-            header_label.grid(row=0, column=col_num, padx=5, pady=5)
-
-        # Display data in a grid
-        for row_num, row in enumerate(data, start=1):
-            for col_num, value in enumerate(row):
-                cell = tk.Label(table_frame, text=value)
-                cell.grid(row=row_num, column=col_num, padx=5, pady=5)
-
     def scrape_data_threaded(self):
         """
         Start the data scraping in a separate thread to keep the UI responsive.
